@@ -47,6 +47,11 @@ export interface ExporterOptions {
    * monitoring.googleapis.com:443.
    */
   apiEndpoint?: string;
+  /**
+   * Assume all metric descriptors have already been created and publish
+   * metrics without checking
+   */
+  skipDescriptorCheck?: boolean;
 }
 
 export interface Credentials {
